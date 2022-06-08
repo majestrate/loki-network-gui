@@ -9,6 +9,9 @@ module.exports = {
   devtool: 'source-map',
   entry: './main.ts',
   target: 'electron-main',
+  externals: {
+    "zeromq": "require('zeromq')",
+  },
   module: {
     rules: [
       {
